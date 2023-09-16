@@ -7,40 +7,10 @@
 
 def Xform "Root"
 {
-    reorder nameChildren = ["Sphere_Left", "Sphere_Right", "_GridMaterial"]
-    def Sphere "Sphere_Right" (
-        active = true
-        prepend apiSchemas = ["MaterialBindingAPI"]
-    )
-    {
-        rel material:binding = </Root/_GridMaterial/GridMaterial> (
-            bindMaterialAs = "weakerThanDescendants"
-        )
-        double radius = 0.1
-        quatf xformOp:orient = (1, 0, 0, 0)
-        float3 xformOp:scale = (1, 1, 1)
-        float3 xformOp:translate = (0.5, 1.5, -1.5)
-        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
-    }
-
-    def Sphere "Sphere_Left" (
-        active = true
-        prepend apiSchemas = ["MaterialBindingAPI"]
-    )
-    {
-        rel material:binding = </Root/_GridMaterial/GridMaterial> (
-            bindMaterialAs = "weakerThanDescendants"
-        )
-        double radius = 0.1
-        quatf xformOp:orient = (1, 0, 0, 0)
-        float3 xformOp:scale = (1, 1, 1)
-        float3 xformOp:translate = (-0.5, 1.5, -1.5)
-        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
-    }
-
+    reorder nameChildren = ["_GridMaterial", "AmbientAudio", "Space_wav", "Rocket", "Earth", "ParticleEmitter"]
     def "_GridMaterial" (
         active = true
-        prepend references = @_GridMaterial.usda@
+        references = @_GridMaterial.usda@
     )
     {
         float3 xformOp:scale = (1, 1, 1)
@@ -59,6 +29,64 @@ def Xform "Root"
     {
         uniform asset file = @Space.wav@
         uniform bool shouldLoop = 1
+    }
+
+    def "Rocket" (
+        active = true
+        references = @Rocket.usdz@
+    )
+    {
+        reorder nameChildren = ["Falcon9", "ParticleEmitter"]
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (-0.5, 0, -2)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Xform "ParticleEmitter"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.8, 0.8, 0.8)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def RealityKitComponent "VFXEmitter"
+            {
+                token info:id = "RealityKit.VFXEmitter"
+
+                def RealityKitStruct "currentState"
+                {
+                    token birthDirection = "Local"
+                    int64 burstCount = 1000
+                    float3 emissionDirection = (0, -1, 0)
+
+                    def RealityKitStruct "mainEmitter"
+                    {
+                        float birthRate = 1000
+                        float4 endColorA = (1, 0.11927168, 0, 1)
+                        token opacityOverLife = "LinearFadeIn"
+                        float particleSize = 0.06
+                        float4 startColorA = (0.7397404, 0.87916875, 0, 1)
+                        bool useEndColor = 1
+                        bool useEndColorRange = 0
+                        bool useStartColorRange = 0
+                    }
+
+                    def RealityKitStruct "spawnedEmitter"
+                    {
+                    }
+                }
+            }
+        }
+    }
+
+    def "Earth" (
+        active = true
+        references = @Earth.usdz@
+    )
+    {
+        reorder nameChildren = ["geom", "ParticleEmitter"]
+        float3 xformOp:scale = (20, 20, 20)
+        float3 xformOp:translate = (-2.25, -1.2, -4)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
 }
 
