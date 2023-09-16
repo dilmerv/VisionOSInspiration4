@@ -46,5 +46,19 @@ def Xform "Root"
         float3 xformOp:scale = (1, 1, 1)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
+
+    def Xform "AmbientAudio"
+    {
+        def RealityKitComponent "AmbientAudio"
+        {
+            uniform token info:id = "RealityKit.AmbientAudio"
+        }
+    }
+
+    def RealityKitAudioFile "Space_wav"
+    {
+        uniform asset file = @Space.wav@
+        uniform bool shouldLoop = 1
+    }
 }
 

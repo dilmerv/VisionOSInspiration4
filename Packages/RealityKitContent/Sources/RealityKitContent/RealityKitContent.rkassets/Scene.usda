@@ -22,7 +22,7 @@ def Xform "Root"
         )
         double radius = 0.05
         quatf xformOp:orient = (1, 0, 0, 0)
-        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:scale = (2, 2, 2)
         float3 xformOp:translate = (0, 0, 0.0004)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 

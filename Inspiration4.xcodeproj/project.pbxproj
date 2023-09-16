@@ -11,6 +11,15 @@
 		0F4A00882AB3B505004AE0DE /* Inspiration4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00872AB3B505004AE0DE /* Inspiration4App.swift */; };
 		0F4A00902AB3B506004AE0DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A008F2AB3B506004AE0DE /* Assets.xcassets */; };
 		0F4A00932AB3B506004AE0DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A00922AB3B506004AE0DE /* Preview Assets.xcassets */; };
+		0F4A009C2AB4FD47004AE0DE /* Areas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A009B2AB4FD47004AE0DE /* Areas.swift */; };
+		0F4A00A02AB61372004AE0DE /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A009F2AB61372004AE0DE /* Area.swift */; };
+		0F4A00A22AB61544004AE0DE /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00A12AB61544004AE0DE /* Crew.swift */; };
+		0F4A00A42AB61590004AE0DE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00A32AB61590004AE0DE /* ViewModel.swift */; };
+		0F4A00A62AB61968004AE0DE /* NavigationToAreas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00A52AB61968004AE0DE /* NavigationToAreas.swift */; };
+		0F4A00A82AB621D5004AE0DE /* CrewArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00A72AB621D5004AE0DE /* CrewArea.swift */; };
+		0F4A00AA2AB628FD004AE0DE /* EquipmentArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00A92AB628FD004AE0DE /* EquipmentArea.swift */; };
+		0F4A00AD2AB6361B004AE0DE /* CapsuleRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00AC2AB6361B004AE0DE /* CapsuleRealityArea.swift */; };
+		0F4A00AF2AB6362C004AE0DE /* FullRocketRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00AE2AB6362C004AE0DE /* FullRocketRealityArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		0F4A008F2AB3B506004AE0DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F4A00922AB3B506004AE0DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F4A00942AB3B506004AE0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4A009B2AB4FD47004AE0DE /* Areas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Areas.swift; sourceTree = "<group>"; };
+		0F4A009F2AB61372004AE0DE /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		0F4A00A12AB61544004AE0DE /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
+		0F4A00A32AB61590004AE0DE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0F4A00A52AB61968004AE0DE /* NavigationToAreas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToAreas.swift; sourceTree = "<group>"; };
+		0F4A00A72AB621D5004AE0DE /* CrewArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewArea.swift; sourceTree = "<group>"; };
+		0F4A00A92AB628FD004AE0DE /* EquipmentArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentArea.swift; sourceTree = "<group>"; };
+		0F4A00AC2AB6361B004AE0DE /* CapsuleRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleRealityArea.swift; sourceTree = "<group>"; };
+		0F4A00AE2AB6362C004AE0DE /* FullRocketRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRocketRealityArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,9 @@
 		0F4A00822AB3B505004AE0DE /* Inspiration4 */ = {
 			isa = PBXGroup;
 			children = (
+				0F4A009E2AB6135A004AE0DE /* Models */,
+				0F4A009A2AB4FCA5004AE0DE /* Areas */,
+				0F4A00AB2AB635E8004AE0DE /* RealityViews */,
 				0F4A00872AB3B505004AE0DE /* Inspiration4App.swift */,
 				0F4A008F2AB3B506004AE0DE /* Assets.xcassets */,
 				0F4A00942AB3B506004AE0DE /* Info.plist */,
@@ -76,6 +97,36 @@
 				0F4A00922AB3B506004AE0DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0F4A009A2AB4FCA5004AE0DE /* Areas */ = {
+			isa = PBXGroup;
+			children = (
+				0F4A009B2AB4FD47004AE0DE /* Areas.swift */,
+				0F4A00A52AB61968004AE0DE /* NavigationToAreas.swift */,
+				0F4A00A72AB621D5004AE0DE /* CrewArea.swift */,
+				0F4A00A92AB628FD004AE0DE /* EquipmentArea.swift */,
+			);
+			path = Areas;
+			sourceTree = "<group>";
+		};
+		0F4A009E2AB6135A004AE0DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F4A009F2AB61372004AE0DE /* Area.swift */,
+				0F4A00A12AB61544004AE0DE /* Crew.swift */,
+				0F4A00A32AB61590004AE0DE /* ViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0F4A00AB2AB635E8004AE0DE /* RealityViews */ = {
+			isa = PBXGroup;
+			children = (
+				0F4A00AC2AB6361B004AE0DE /* CapsuleRealityArea.swift */,
+				0F4A00AE2AB6362C004AE0DE /* FullRocketRealityArea.swift */,
+			);
+			path = RealityViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4A00A42AB61590004AE0DE /* ViewModel.swift in Sources */,
+				0F4A009C2AB4FD47004AE0DE /* Areas.swift in Sources */,
+				0F4A00A02AB61372004AE0DE /* Area.swift in Sources */,
+				0F4A00A82AB621D5004AE0DE /* CrewArea.swift in Sources */,
+				0F4A00A62AB61968004AE0DE /* NavigationToAreas.swift in Sources */,
+				0F4A00AD2AB6361B004AE0DE /* CapsuleRealityArea.swift in Sources */,
+				0F4A00AF2AB6362C004AE0DE /* FullRocketRealityArea.swift in Sources */,
+				0F4A00A22AB61544004AE0DE /* Crew.swift in Sources */,
 				0F4A00882AB3B505004AE0DE /* Inspiration4App.swift in Sources */,
+				0F4A00AA2AB628FD004AE0DE /* EquipmentArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
