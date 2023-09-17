@@ -33,7 +33,7 @@ struct NavigationToAreas: View {
                             EquipmentArea()
                         }
                         else if area == Area.mission {
-                            
+                            MissionArea()
                         }
                         
                         Spacer()

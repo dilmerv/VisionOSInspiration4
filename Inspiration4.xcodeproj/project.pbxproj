@@ -20,6 +20,8 @@
 		0F4A00AA2AB628FD004AE0DE /* EquipmentArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00A92AB628FD004AE0DE /* EquipmentArea.swift */; };
 		0F4A00AD2AB6361B004AE0DE /* CapsuleRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00AC2AB6361B004AE0DE /* CapsuleRealityArea.swift */; };
 		0F4A00AF2AB6362C004AE0DE /* FullRocketRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00AE2AB6362C004AE0DE /* FullRocketRealityArea.swift */; };
+		0F4A00B32AB646D5004AE0DE /* MissionArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00B22AB646D5004AE0DE /* MissionArea.swift */; };
+		0F4A00B42AB770AF004AE0DE /* Inspiration4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A00B12AB646C2004AE0DE /* Inspiration4.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		0F4A00A92AB628FD004AE0DE /* EquipmentArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentArea.swift; sourceTree = "<group>"; };
 		0F4A00AC2AB6361B004AE0DE /* CapsuleRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleRealityArea.swift; sourceTree = "<group>"; };
 		0F4A00AE2AB6362C004AE0DE /* FullRocketRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRocketRealityArea.swift; sourceTree = "<group>"; };
+		0F4A00B12AB646C2004AE0DE /* Inspiration4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inspiration4.mp4; sourceTree = "<group>"; };
+		0F4A00B22AB646D5004AE0DE /* MissionArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				0F4A009E2AB6135A004AE0DE /* Models */,
 				0F4A009A2AB4FCA5004AE0DE /* Areas */,
 				0F4A00AB2AB635E8004AE0DE /* RealityViews */,
+				0F4A00B02AB646B3004AE0DE /* Videos */,
 				0F4A00872AB3B505004AE0DE /* Inspiration4App.swift */,
 				0F4A008F2AB3B506004AE0DE /* Assets.xcassets */,
 				0F4A00942AB3B506004AE0DE /* Info.plist */,
@@ -106,6 +111,7 @@
 				0F4A00A52AB61968004AE0DE /* NavigationToAreas.swift */,
 				0F4A00A72AB621D5004AE0DE /* CrewArea.swift */,
 				0F4A00A92AB628FD004AE0DE /* EquipmentArea.swift */,
+				0F4A00B22AB646D5004AE0DE /* MissionArea.swift */,
 			);
 			path = Areas;
 			sourceTree = "<group>";
@@ -127,6 +133,14 @@
 				0F4A00AE2AB6362C004AE0DE /* FullRocketRealityArea.swift */,
 			);
 			path = RealityViews;
+			sourceTree = "<group>";
+		};
+		0F4A00B02AB646B3004AE0DE /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				0F4A00B12AB646C2004AE0DE /* Inspiration4.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4A00B42AB770AF004AE0DE /* Inspiration4.mp4 in Resources */,
 				0F4A00902AB3B506004AE0DE /* Assets.xcassets in Resources */,
 				0F4A00932AB3B506004AE0DE /* Preview Assets.xcassets in Resources */,
 			);
@@ -203,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4A00A42AB61590004AE0DE /* ViewModel.swift in Sources */,
+				0F4A00B32AB646D5004AE0DE /* MissionArea.swift in Sources */,
 				0F4A009C2AB4FD47004AE0DE /* Areas.swift in Sources */,
 				0F4A00A02AB61372004AE0DE /* Area.swift in Sources */,
 				0F4A00A82AB621D5004AE0DE /* CrewArea.swift in Sources */,

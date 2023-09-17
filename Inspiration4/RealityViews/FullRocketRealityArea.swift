@@ -25,6 +25,7 @@ struct FullRocketRealityArea: View {
                 fatalError("Unable to load space.wav audio resource")
             }
             
+            ambientAudioEntity?.ambientAudio?.gain = -30;
             audioController = ambientAudioEntity?.prepareAudio(resource)
             audioController?.play()
             
