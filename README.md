@@ -1,6 +1,8 @@
 # VisionOSInspiration4
 A demo project to help everyone in learning VisionOS development and by creating an Inspiration4 Fan App.
 
+📢 Be sure to watch my 🎥 [full YouTube video](TBD) for step by step details & consider [subscribing here](https://www.youtube.com/@dilmerv) for more videos thanks.
+
 #### VisionOS App Video Demo
 <img src="https://github.com/dilmerv/VisionOSInspiration4/blob/master/docs/images/Overview.gif" width="300">
 
