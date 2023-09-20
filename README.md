@@ -17,5 +17,6 @@ A demo project to help everyone in learning VisionOS development and by creating
 
 
 # Requirements
-- Xcode version 15 beta 8 or greater
-- visionOS 1 beta 3 Simulator Runtime or greater
+- Xcode Version 15 beta 8 or greater
+- visionOS Version 1 beta 3 Simulator Runtime or greater
+- Reality Composer Pro Version 1.0 (393.3) or greater
