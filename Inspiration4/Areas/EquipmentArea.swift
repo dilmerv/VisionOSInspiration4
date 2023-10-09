@@ -19,47 +19,23 @@ struct EquipmentArea: View {
         @Bindable var model = model
         
         HStack {
-            VStack {
-                Image("equipment-capsule")
-                    .resizable()
-                    .frame(width: 300, height: 300)
-                    .padding(20)
-                Toggle(model.isShowingRocketCapsule ? "Hide Rocket Capsule (Volumetric)" : "Show Rocket Capsule (Volumetric)", isOn: $model.isShowingRocketCapsule)
-                    .onChange(of: model.isShowingRocketCapsule) { _, isShowing in
-                        if isShowing {
-                            openWindow(id: "CapsuleRealityArea")
-                        }
-                        else
-                        {
-                            dismissWindow(id: "CapsuleRealityArea")
-                        }
-                    }
-                    .toggleStyle(.button)
-                    .padding(25)
+            EquipmentCard(isShowing: $model.isShowingRocketCapsule, toggleTitle: "Rocket Capsule (Volumetric)", imageName: "equipment-capsule") {
+                openWindow(id: model.capsuleRealityAreaId)
+            } dismissCard: {
+                dismissWindow(id: model.capsuleRealityAreaId)
             }
-            .glassBackgroundEffect()
             
-            VStack {
-                Image("equipment-fullrocket")
-                    .resizable()
-                    .frame(width: 300, height: 300)
-                    .padding(20)
-                Toggle(model.isShowingFullRocket ? "Hide Full Rocket (Full Immersed)" : "Show Show Full Rocket (Full Immersed)", isOn: $model.isShowingFullRocket)
-                    .onChange(of: model.isShowingFullRocket) { _, isShowing in
-                        Task {
-                            if isShowing {
-                                await openImmersiveSpace(id: "FullRocketRealityArea")
-                            }
-                            else
-                            {
-                                await dismissImmersiveSpace()
-                            }
-                        }
-                    }
-                    .toggleStyle(.button)
-                    .padding(25)
+            EquipmentCard(isShowing: $model.isShowingFullRocket, toggleTitle: "Rocket (Full Immersive Space)", imageName: "equipment-fullrocket") {
+                await openImmersiveSpace(id: model.fullRocketRealityArea)
+            } dismissCard: {
+                await dismissImmersiveSpace()
             }
-            .glassBackgroundEffect()
+            
+            EquipmentCard(isShowing: $model.isShowingMixedRocket, toggleTitle: "Rocket (Mixed Immersive Space)", imageName: "equipment-mixedrocket") {
+                await openImmersiveSpace(id: model.mixedRocketRealityArea)
+            } dismissCard: {
+                await dismissImmersiveSpace()
+            }
         }
     }
 }

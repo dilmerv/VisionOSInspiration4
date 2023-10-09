@@ -29,6 +29,48 @@ def Xform "Root"
         float3 xformOp:scale = (1, 1, 1)
         float3 xformOp:translate = (0, 0, 0)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Scene"
+        {
+            over "SpaceX_Dragon_2_exterior"
+            {
+                over "Materials"
+                {
+                    over "trunk"
+                    {
+                        token outputs:mtlx:surface
+                        token outputs:realitykit:vertex
+                    }
+
+                    over "heatshield"
+                    {
+                        token outputs:mtlx:surface
+                        token outputs:realitykit:vertex
+                    }
+
+                    over "windows"
+                    {
+                        token outputs:mtlx:surface
+                        token outputs:realitykit:vertex
+                    }
+                }
+
+                over "Meshes"
+                {
+                    over "Sketchfab_model"
+                    {
+                        over "dragon_2_obj_cleaner_gles"
+                        {
+                            over "Object_4" (
+                                active = false
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

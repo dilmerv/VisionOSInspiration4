@@ -29,6 +29,12 @@ struct FullRocketRealityArea: View {
             audioController = ambientAudioEntity?.prepareAudio(resource)
             audioController?.play()
             
+            
+            // find rocket and apply orbit component
+            if let rocket = entity.findEntity(named: "Rocket"){
+                rocket.components.set(OrbitComponent(radius: 0.02, speed: 0.5, addOrientationRotation: true))
+            }
+            
             content.add(entity)
         }
         .onDisappear(perform: {

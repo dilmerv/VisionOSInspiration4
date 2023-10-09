@@ -22,6 +22,11 @@
 		0F4A00AF2AB6362C004AE0DE /* FullRocketRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00AE2AB6362C004AE0DE /* FullRocketRealityArea.swift */; };
 		0F4A00B32AB646D5004AE0DE /* MissionArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A00B22AB646D5004AE0DE /* MissionArea.swift */; };
 		0F4A00B42AB770AF004AE0DE /* Inspiration4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A00B12AB646C2004AE0DE /* Inspiration4.mp4 */; };
+		0FD3612D2AD34C90004746F1 /* EquipmentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3612C2AD34C90004746F1 /* EquipmentCard.swift */; };
+		0FD3612F2AD38B38004746F1 /* CapsuleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3612E2AD38B38004746F1 /* CapsuleDetails.swift */; };
+		0FD361322AD38ECE004746F1 /* Sunlight.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 0FD361312AD38ECE004746F1 /* Sunlight.skybox */; };
+		0FD361352AD38EF5004746F1 /* Entity+Sunlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD361342AD38EF5004746F1 /* Entity+Sunlight.swift */; };
+		0FD361382AD394B8004746F1 /* OrbitSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD361372AD394B8004746F1 /* OrbitSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		0F4A00AE2AB6362C004AE0DE /* FullRocketRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRocketRealityArea.swift; sourceTree = "<group>"; };
 		0F4A00B12AB646C2004AE0DE /* Inspiration4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inspiration4.mp4; sourceTree = "<group>"; };
 		0F4A00B22AB646D5004AE0DE /* MissionArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionArea.swift; sourceTree = "<group>"; };
+		0FD3612C2AD34C90004746F1 /* EquipmentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCard.swift; sourceTree = "<group>"; };
+		0FD3612E2AD38B38004746F1 /* CapsuleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleDetails.swift; sourceTree = "<group>"; };
+		0FD361312AD38ECE004746F1 /* Sunlight.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Sunlight.skybox; sourceTree = "<group>"; };
+		0FD361342AD38EF5004746F1 /* Entity+Sunlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Sunlight.swift"; sourceTree = "<group>"; };
+		0FD361372AD394B8004746F1 /* OrbitSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +91,9 @@
 				0F4A00AB2AB635E8004AE0DE /* RealityViews */,
 				0F4A00B02AB646B3004AE0DE /* Videos */,
 				0F4A00872AB3B505004AE0DE /* Inspiration4App.swift */,
-				0F4A008F2AB3B506004AE0DE /* Assets.xcassets */,
+				0FD361362AD3949E004746F1 /* Systems */,
+				0FD361332AD38ED4004746F1 /* Extensions */,
+				0FD361302AD38EBB004746F1 /* Resources */,
 				0F4A00942AB3B506004AE0DE /* Info.plist */,
 				0F4A00912AB3B506004AE0DE /* Preview Content */,
 			);
@@ -108,10 +120,12 @@
 			isa = PBXGroup;
 			children = (
 				0F4A009B2AB4FD47004AE0DE /* Areas.swift */,
-				0F4A00A52AB61968004AE0DE /* NavigationToAreas.swift */,
 				0F4A00A72AB621D5004AE0DE /* CrewArea.swift */,
 				0F4A00A92AB628FD004AE0DE /* EquipmentArea.swift */,
+				0FD3612C2AD34C90004746F1 /* EquipmentCard.swift */,
 				0F4A00B22AB646D5004AE0DE /* MissionArea.swift */,
+				0F4A00A52AB61968004AE0DE /* NavigationToAreas.swift */,
+				0FD3612E2AD38B38004746F1 /* CapsuleDetails.swift */,
 			);
 			path = Areas;
 			sourceTree = "<group>";
@@ -141,6 +155,31 @@
 				0F4A00B12AB646C2004AE0DE /* Inspiration4.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		0FD361302AD38EBB004746F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FD361312AD38ECE004746F1 /* Sunlight.skybox */,
+				0F4A008F2AB3B506004AE0DE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FD361332AD38ED4004746F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FD361342AD38EF5004746F1 /* Entity+Sunlight.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0FD361362AD3949E004746F1 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				0FD361372AD394B8004746F1 /* OrbitSystem.swift */,
+			);
+			path = Systems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +246,7 @@
 				0F4A00B42AB770AF004AE0DE /* Inspiration4.mp4 in Resources */,
 				0F4A00902AB3B506004AE0DE /* Assets.xcassets in Resources */,
 				0F4A00932AB3B506004AE0DE /* Preview Assets.xcassets in Resources */,
+				0FD361322AD38ECE004746F1 /* Sunlight.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,15 +257,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD361352AD38EF5004746F1 /* Entity+Sunlight.swift in Sources */,
+				0FD3612F2AD38B38004746F1 /* CapsuleDetails.swift in Sources */,
 				0F4A00A42AB61590004AE0DE /* ViewModel.swift in Sources */,
 				0F4A00B32AB646D5004AE0DE /* MissionArea.swift in Sources */,
 				0F4A009C2AB4FD47004AE0DE /* Areas.swift in Sources */,
 				0F4A00A02AB61372004AE0DE /* Area.swift in Sources */,
+				0FD3612D2AD34C90004746F1 /* EquipmentCard.swift in Sources */,
 				0F4A00A82AB621D5004AE0DE /* CrewArea.swift in Sources */,
 				0F4A00A62AB61968004AE0DE /* NavigationToAreas.swift in Sources */,
 				0F4A00AD2AB6361B004AE0DE /* CapsuleRealityArea.swift in Sources */,
 				0F4A00AF2AB6362C004AE0DE /* FullRocketRealityArea.swift in Sources */,
 				0F4A00A22AB61544004AE0DE /* Crew.swift in Sources */,
+				0FD361382AD394B8004746F1 /* OrbitSystem.swift in Sources */,
 				0F4A00882AB3B505004AE0DE /* Inspiration4App.swift in Sources */,
 				0F4A00AA2AB628FD004AE0DE /* EquipmentArea.swift in Sources */,
 			);
