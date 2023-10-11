@@ -1,12 +1,18 @@
 # VisionOSInspiration4
-A demo project to help everyone in learning VisionOS development and by creating an Inspiration4 Fan App.
+A demo project to help everyone in Getting Started With VisionOS development and by creating a SpaceX Inspiration4 Fan App. Consider [subscribing here](https://www.youtube.com/@dilmerv) to support this GitHub repo and my content thank you.
 
-📢 Be sure to watch my 🎥 [full YouTube video](TBD) for step by step details & consider [subscribing here](https://www.youtube.com/@dilmerv) for more videos thanks.
+📢 Full 🎥 video series in chronolical order: 
+👉 [Video #1](https://www.youtube.com/watch?v=eMA1Vd1nc9M) VisionOS Project Setup.
+👉 [Video #2](https://www.youtube.com/watch?v=Ox_eN-k0Z2k) RealityView attachments, updates, placeholders, systems, components, and entities.
 
 #### VisionOS App Video Demo
-<img src="https://github.com/dilmerv/VisionOSInspiration4/blob/master/docs/images/Overview.gif" width="300">
+|Video Demos||
+|---|---|
+|<img src="https://github.com/dilmerv/VisionOSInspiration4/blob/master/docs/images/Video_1_Overview.gif" width="300">|<img src="https://github.com/dilmerv/VisionOSInspiration4/blob/master/docs/images/Video_2_Overview.gif" width="300"|
 
-#### Example screens created for VisionOS Dev Video #1
+
+
+#### Example screens created for VisionOS Development Video Series
 
 |Screens||
 |---|---|
