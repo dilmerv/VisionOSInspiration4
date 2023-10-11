@@ -8,7 +8,7 @@ A demo project to help everyone in Getting Started With VisionOS development and
 #### VisionOS App Video Demo
 |Video Demos||
 |---|---|
-|<img src="https://github.com/dilmerv/VisionOSInspiration4/blob/master/docs/images/Video_1_Overview.gif" width="300">|<img src="https://github.com/dilmerv/VisionOSInspiration4/blob/master/docs/images/Video_2_Overview.gif" width="300"|
+|<img src="https://github.com/dilmerv/VisionOSInspiration4/blob/master/docs/images/Video_1_Overview.gif" width="300">|<img src="https://github.com/dilmerv/VisionOSInspiration4/blob/master/docs/images/Video_2_Overview.gif" width="300">|
 
 
 
